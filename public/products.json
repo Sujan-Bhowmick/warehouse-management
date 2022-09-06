@@ -1,0 +1,75 @@
+[
+    {
+      "_id": "6312d0b9c49d13e3ed378e74",
+      "quantity": 0,
+      "img": "https://i.ibb.co/3FnDPmV/car1.jpg",
+      "price": 27,
+      "name": "BMW x5",
+      "supplier": "Albert Bush",
+      "description": "Laboris nulla mollit mollit qui laboris aute. Adipisicing fugiat ad exercitation deserunt voluptate mollit labore. Reprehenderit adipisicing incididunt fugiat consequat anim incididunt Lorem in cupidatat aliqua.\r\n"
+    },
+    {
+      "_id": "6312d0b931705cf65140bde8",
+      "quantity": 1,
+      "img": "https://i.ibb.co/dQRLz32/car2.jpg",
+      "price": 24,
+      "name": "BMW 3 Series Sedan",
+      "supplier": "Joseph Sutton",
+      "description": "Est est cillum proident est irure. Consequat et exercitation aliquip aliquip qui consequat nulla aliquip cillum proident anim Lorem Lorem. Minim incididunt dolor Lorem aute magna velit voluptate eu.\r\n"
+    },
+    {
+      "_id": "6312d0b972daf1646c724a2a",
+      "quantity": 2,
+      "img": "https://i.ibb.co/hKXQmqq/car3.jpg",
+      "price": 21,
+      "name": "BMW Z4",
+      "supplier": "Christina Good",
+      "description": "Dolor eiusmod sit duis commodo nulla id deserunt tempor sint excepteur. Anim nostrud sint adipisicing commodo ut. Lorem occaecat magna est ea voluptate ipsum elit proident culpa amet ullamco. Veniam aliqua mollit culpa sint culpa veniam aliquip tempor quis magna. Fugiat velit incididunt nostrud anim qui culpa cillum tempor esse nulla. Duis consequat est esse Lorem cillum ex officia dolore labore. Et voluptate deserunt elit adipisicing laboris enim excepteur culpa qui anim officia pariatur laboris.\r\n"
+    },
+    {
+      "_id": "6312d0b922516e2a14d5b4d5",
+      "quantity": 3,
+      "img": "https://i.ibb.co/R656YLM/car4.jpg",
+      "price": 31,
+      "name": "Mercedes-Benz GLA",
+      "supplier": "Sheena Lancaster",
+      "description": "Nostrud cillum sit esse sit excepteur eu cillum. Mollit consectetur laboris in aliqua ex culpa commodo id. Esse eiusmod minim eiusmod do dolor elit Lorem.\r\n"
+    },
+    {
+      "_id": "6312d0b9a632f0ad0fafbb24",
+      "quantity": 4,
+      "img": "https://i.ibb.co/bmxcp8w/car7.jpg",
+      "price": 22,
+      "name": "Bently V8",
+      "supplier": "Witt Shields",
+      "description": "Labore eiusmod ea deserunt deserunt eiusmod aliqua cupidatat laboris magna reprehenderit amet. Adipisicing duis eu duis cupidatat deserunt. Id fugiat elit nulla ut non consectetur officia aute anim. Minim in ad veniam Lorem nisi cillum dolore. Enim non aute laboris nostrud velit sunt. Fugiat laboris proident consequat et. Nulla quis occaecat minim ex tempor incididunt.\r\n"
+    },
+    {
+      "_id": "6312d0b98455f9c4a3b67dce",
+      "quantity": 6,
+      "img": "https://i.ibb.co/41VNwD3/car6.jpg",
+      "price": 32,
+      "name": "Audi A4",
+      "supplier": "Jerry Snow",
+      "description": "Reprehenderit laborum sunt aliqua ut enim laboris tempor fugiat voluptate occaecat reprehenderit labore dolore. Excepteur cupidatat commodo laboris aute. Eu id in mollit ea. Reprehenderit exercitation non irure nisi.\r\n"
+    },
+    {
+      "_id": "6312d0b946763edc0550957c",
+      "quantity": 5,
+      "img": "https://i.ibb.co/Z6wk0kw/images-11.jpg",
+      "price": 26,
+      "name": "Audi Q3",
+      "supplier": "Berry Franks",
+      "description": "Et deserunt officia nisi culpa quis pariatur excepteur dolor irure. Amet labore commodo do sint proident et minim elit. Ut deserunt qui irure nostrud consectetur qui ea veniam fugiat consectetur velit nulla esse ea. Aliqua occaecat proident dolor ea et excepteur non aute ad culpa sunt Lorem.\r\n"
+    },
+    {
+      "_id": "6312d0b98455f9c4a3b67dce",
+      "quantity": 6,
+      "img": "https://i.ibb.co/zSx1nDp/download-1.jpg",
+      "price": 32,
+      "name": "Audi A4",
+      "supplier": "Jerry Snow",
+      "description": "Reprehenderit laborum sunt aliqua ut enim laboris tempor fugiat voluptate occaecat reprehenderit labore dolore. Excepteur cupidatat commodo laboris aute. Eu id in mollit ea. Reprehenderit exercitation non irure nisi.\r\n"
+    }
+   
+  ]
