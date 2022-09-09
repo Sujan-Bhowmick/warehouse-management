@@ -12,6 +12,7 @@ import CheckOut from './Pages/CheckOut/CheckOut';
 import Register from './Pages/Login/Register/Register';
 import app from './firebase.init';
 import NotFound from './Pages/Shared/NotFound/NotFound';
+import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
 
 
 function App() {
@@ -22,8 +23,14 @@ function App() {
       <Route path='/' element = {<Home></Home>}></Route>
       <Route path='/home' element = {<Home></Home>}></Route>
       <Route path='/blogs' element = {<Blogs></Blogs>}></Route>
-      <Route path='/product/:serviceId' element = {<ProductDetails></ProductDetails>}></Route>
-      <Route path='/chekout' element = {<CheckOut></CheckOut>}></Route>
+      <Route path='/product/:serviceId' element = {
+        
+          <RequireAuth>
+            <ProductDetails></ProductDetails>
+          </RequireAuth>
+       
+      }></Route>
+      <Route path='/chekout' element = {<CheckOut></CheckOut> }></Route>
       <Route path='/login' element = {<Login></Login>}></Route>
       <Route path='/register' element = {<Register></Register>}></Route>
       <Route path='/products' element = {<Products></Products>}></Route>

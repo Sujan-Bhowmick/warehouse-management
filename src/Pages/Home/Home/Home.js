@@ -14,7 +14,7 @@ const Home = () => {
             <h3 className='my-5'>Search Your Best Cars</h3>
             <div className='products'>
                 {
-                    products.map(product => <Product
+                    products.slice(0, 3).map(product => <Product
                         product={product}
                         key={product._id}
                     ></Product>)
