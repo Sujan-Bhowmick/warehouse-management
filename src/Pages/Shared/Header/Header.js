@@ -4,7 +4,7 @@ import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import auth from '../../../firebase.init';
-import logo1 from '../../../images/logo/logo1.png'
+import logo from '../../../images/logo/logo4 (1).png'
 
 const Header = () => {
     const [user] = useAuthState(auth);
@@ -17,7 +17,7 @@ const Header = () => {
             <Navbar collapseOnSelect expand="lg" bg="dark" sticky='top' variant="dark">
                 <Container>
                     <Navbar.Brand  href="#home">
-                        <img src={logo1} height="60" alt="" />
+                        <img src={logo} height="60" alt="" />
                         
                     </Navbar.Brand>
 
@@ -41,7 +41,12 @@ const Header = () => {
                         </Nav>
                         <Nav>
                             <Nav.Link href="/products">Products</Nav.Link>
-                            <Nav.Link href="/inventory">Add Inventory</Nav.Link>
+                            {
+                                user && <>
+                                   <Nav.Link href="/inventory">Add </Nav.Link>
+                                   <Nav.Link href="/manage">Manage</Nav.Link>
+                                </>
+                            }
                             <Nav.Link eventKey={2} href="#memes">
                                 Dank memes
                             </Nav.Link>

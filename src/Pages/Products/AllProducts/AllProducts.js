@@ -1,7 +1,8 @@
 import React from 'react';
 import './AllProducts.css'
 const AllProducts = (props) => {
-    const {img, name, supplier, price, quantity,} = props.product
+    const {handleDelete , product} = props;
+    const {img, name, supplier, price, quantity, description} = product;
     return (
         <div className='all-products'>
             <img src= {img} alt="" />
@@ -10,7 +11,8 @@ const AllProducts = (props) => {
             <h5>Supplier: {supplier}</h5>
             <h5>Price: {price}</h5>
             <p>Quantity: {quantity}</p>
-             <input type="submit" value="Delete" />
+            <p>Description: {description}</p>
+            <button className='btn btn-dark' onClick={() => handleDelete(product._id)}>delete</button>
             </div>
         </div>
     );
