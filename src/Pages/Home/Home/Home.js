@@ -1,10 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import useProducts from '../../hooks/useProducts';
 import Product from '../../Products/Product/Product';
-
 import Banner from '../Banner/Banner';
+import './Home.css'
 
 const Home = () => {
     const [products, setProducts] = useProducts();

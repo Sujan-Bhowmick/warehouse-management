@@ -14,6 +14,7 @@ import app from './firebase.init';
 import NotFound from './Pages/Shared/NotFound/NotFound';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
 import ManageInventory from './Pages/ManageInventory/ManageInventory';
+import UpdateUser from './Pages/UpdateUser/UpdateUser';
 
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
       <Route path='/products' element = {<Products></Products>}></Route>
       <Route path='/inventory' element = {<AddInventory></AddInventory>}></Route>
       <Route path='*' element = {<NotFound></NotFound>}></Route>
+      <Route path='/update/:id' element = {<UpdateUser></UpdateUser>}></Route>
      </Routes>
     </div>
   );

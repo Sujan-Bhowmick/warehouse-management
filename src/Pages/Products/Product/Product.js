@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import './Product.css'
 
 const Product = (props) => {
     const {_id, img, name, supplier, price, quantity, description} = props.product;
