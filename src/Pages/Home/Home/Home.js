@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import useProducts from '../../hooks/useProducts';
 import Product from '../../Products/Product/Product';
+import Footer from '../../Shared/Footer/Footer';
 import Banner from '../Banner/Banner';
 import './Home.css'
 
@@ -20,8 +21,9 @@ const Home = () => {
                 }
             </div>
             <Link to='/products'>
-                <button className = 'my-5 btn btn-dark'>Manage Inventories</button>
+                <button className = 'my-5 add-manage'>Manage Inventories</button>
             </Link>
+            <Footer></Footer>
         </div>
     );
 };

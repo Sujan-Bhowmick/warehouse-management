@@ -1,0 +1,66 @@
+.social{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* padding-top: 30px; */
+}
+.social h6{
+    
+        color: #fff;
+        border: none;
+        padding: 15px 20px;
+        /* display: inline-block; */
+        text-decoration: none; 
+        /* font: bold 18px sans-serif; */
+        /* background: #fd7c2a; */
+        -webkit-transition: background 2s; /* For Safari 3.0 to 6.0 */
+        transition: background 2s; /* For modern browsers */
+}
+
+.social h6:hover{
+    background-color: red;
+}
+
+.footer{
+    height: 400px;
+    background-color: black;
+    color: aliceblue;
+}
+.footer-link{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: start;
+    padding-top: 70px;
+   
+}
+.footer-link a {
+    text-decoration: none;
+    display: block;
+    color: gray;
+    line-height: 26px;
+    
+}
+.footer-link small{
+    color: gray;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 576px){
+    .footer-link{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer{
+        height: 500px;
+    }
+    .our-terms{
+        margin-left: 15px;
+    }
+    .social{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
+
+

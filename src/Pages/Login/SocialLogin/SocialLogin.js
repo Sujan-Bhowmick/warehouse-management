@@ -33,7 +33,7 @@ const SocialLogin = () => {
                 <div style={{height: '1px'}} className='w-50 bg-primary'></div>
             </div>
             <div className='mb-3 '>
-                <button onClick={ () => signInWithGoogle()} className='btn btn-dark w-50'>
+                <button onClick={ () => signInWithGoogle()} className='add-manage w-50'>
                 <img style={{width: '15px'}} src= {google} alt="" />
                    <span> Google Sign In</span>  
                     </button>

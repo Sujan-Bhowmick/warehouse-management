@@ -34,7 +34,7 @@ const Products = () => {
                 }
             </div>
             <Link to = "/inventory">
-            <button className='my-5 btn btn-dark'>Add New Item</button>
+            <button className='my-5 add-manage'>Add New Item</button>
             </Link>
            
         </div>

@@ -18,7 +18,7 @@ const Product = (props) => {
             <h5>Price: {price}</h5>
             <p>Quantity: {quantity}</p>
             <p>Description: {description.slice(0 , 15)}</p>
-            <button onClick={() => navigateToProductDetail(_id)} className = 'btn btn-dark'>Update</button>
+            <button onClick={() => navigateToProductDetail(_id)} className = 'update'>Update</button>
         </div>
     );
 };

@@ -80,7 +80,7 @@ const Login = () => {
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
         </Form.Group>
-        <Button className='w-50' variant="dark" type="submit">
+        <Button className='w-50 add-manage' variant="dark" type="submit">
           Submit
         </Button>
       </Form>

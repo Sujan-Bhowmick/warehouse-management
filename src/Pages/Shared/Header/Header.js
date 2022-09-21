@@ -5,6 +5,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import logo from '../../../images/logo/logo4 (1).png'
+import './Header.css'
 
 const Header = () => {
     const [user] = useAuthState(auth);
@@ -14,20 +15,19 @@ const Header = () => {
     }
     return (
         <>
-            <Navbar collapseOnSelect expand="lg" bg="dark" sticky='top' variant="dark">
-                <Container>
+            <Navbar  collapseOnSelect  className='' expand="lg" bg="dark" sticky='top' variant="dark">
+                <Container >
                     <Navbar.Brand  href="#home">
-                        <img src={logo} height="60" alt="" />
+                        <img src={logo} height="40" alt="" />
                         
                     </Navbar.Brand>
 
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="me-auto">
-                            <Nav.Link href="#features">Features</Nav.Link>
-                            <Nav.Link href="/">Home</Nav.Link>
-                            <Nav.Link href="/blogs">Blogs</Nav.Link>
-                            <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+                        <Nav className="me-auto ">
+                            <Nav.Link className='nav-links' href="/">Home</Nav.Link>
+                            <Nav.Link className='nav-links' href="/blogs">Blogs</Nav.Link>
+                            {/* <NavDropdown className='' title="Dropdown" id="collasible-nav-dropdown">
                                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2">
                                     Another action
@@ -37,25 +37,22 @@ const Header = () => {
                                 <NavDropdown.Item href="#action/3.4">
                                     Separated link
                                 </NavDropdown.Item>
-                            </NavDropdown>
+                            </NavDropdown> */}
                         </Nav>
-                        <Nav>
-                            <Nav.Link href="/products">Products</Nav.Link>
+                        <Nav >
+                            <Nav.Link className='nav-links' href="/products">Products</Nav.Link>
                             {
                                 user && <>
-                                   <Nav.Link href="/inventory">Add </Nav.Link>
-                                   <Nav.Link href="/manage">Manage</Nav.Link>
+                                   <Nav.Link className='nav-links ' href="/inventory">Add </Nav.Link>
+                                   <Nav.Link className='nav-links ' href="/manage">Manage</Nav.Link>
                                 </>
                             }
-                            <Nav.Link eventKey={2} href="#memes">
-                                Dank memes
-                            </Nav.Link>
-
+                           
                             {
                                 user?
-                                <button onClick={handleSignOut} className='btn btn-link text-white text-decoration-none'>Signout</button>
+                                <button onClick={handleSignOut} className='text-decoration-none btn btn-link nav-links'>Signout</button>
                                 :
-                                <Nav.Link as={Link} to = 'login' >Login</Nav.Link>
+                                <Nav.Link className='nav-links' as={Link} to = 'login' >Login</Nav.Link>
                             }
 
                         </Nav>

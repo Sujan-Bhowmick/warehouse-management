@@ -1,0 +1,40 @@
+
+
+.add-manage{
+    width: 200px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    box-shadow: inset black;
+    transition: ease-out 0.99s;
+    font-size:17px;
+    outline: none;
+    position: relative;
+    z-index: 1;
+}
+.add-mange:hover{
+    color: white;
+    background-color: red;
+}
+.add-manage::before{
+    transition: 0.9s all ease;
+    position: absolute;
+    border-radius: 5px;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: red;
+}
+
+.add-manage:hover::before{
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}
