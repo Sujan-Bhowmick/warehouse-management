@@ -3,12 +3,18 @@
    grid-template-columns: repeat(2 , 1fr);
   
 }
+.product-details img{
+   width: 500px;
+}
 .product-details{
-   
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
      margin-top: 10px;
     margin-left: 30px; 
-    background-color: rgb(121, 155, 155);
+   
+   
+}
+.features-details{
+   background-color:  rgb(201, 113, 113);
    
 }
 .quantity-manage{

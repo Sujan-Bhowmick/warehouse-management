@@ -7,10 +7,10 @@ const AllProducts = (props) => {
         <div className='all-products'>
             <img className='img-fluid' src= {img} alt="" />
             <div className='features'>
-            <h4>{name}</h4>
-            <h5>Supplier: {supplier}</h5>
-            <h5>Price: {price}</h5>
-            <p>Quantity: {quantity}</p>
+            <h6 className='my-2'>{name}</h6>
+            <h6>Supplier: {supplier}</h6>
+            <p>Price: {price}</p>
+            <small> <p>Quantity: {quantity}</p></small>
             {/* <p>Description: {description} </p> */}
             <button className='update' onClick={() => handleDelete(product._id)}>delete</button>
             </div>

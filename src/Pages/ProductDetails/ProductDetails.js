@@ -6,10 +6,10 @@ import { useForm } from "react-hook-form";
 import './ProductDetails.css'
 
 const ProductDetails = () => {
-   
+
     const { productId, id } = useParams();
     const [product, setProduct] = useState({});
-    const {  register, handleSubmit } = useForm();
+    const { register, handleSubmit } = useForm();
     useEffect(() => {
         const url = `http://localhost:5000/inventory/${productId}`
 
@@ -18,7 +18,7 @@ const ProductDetails = () => {
             .then(data => setProduct(data))
     }, [])
 
-    
+
     // const onSubmit = data => {
     //     console.log(data);
     //     const url = `http://localhost:5000/inventory/${productId}`;
@@ -34,33 +34,38 @@ const ProductDetails = () => {
     //         console.log(result)
     //     })
     // }
-       
+
     return (
         <div>
-           <div  className= 'details'>
-          
-           <div className='product-details'>
-                <h3>Welcome to car details : {productId} </h3>
-                <img src={product.img} alt="" />
-                <h5>Name: {product.name}</h5>
-                <h6>Price: {product.price}</h6>
-                <h6>Quantity: {product.quantity} </h6>cd 
-                <p>Description: {product.description}</p>
-            </div>
-            <div className='quantity-manage'>
-            <h3 className='my-5'>Quantity </h3>
-            {/* <form onSubmit={handleSubmit(onSubmit)}  >
+            <div className='details'>
+
+                <div className='product-details'>
+                    <h3>Welcome to car details : {productId} </h3>
+                    <div className='image'>
+                        <img src={product.img} alt="" />
+                    </div>
+                    <div className='features-details'>
+                        <h5>Name: {product.name}</h5>
+                        <h6>Price: {product.price}</h6>
+                        <h6>Quantity: {product.quantity} </h6>
+                        <p>Description: {product.description}</p>
+                    </div>
+
+                </div>
+                <div className='quantity-manage'>
+                    <h3 className='my-5'>Quantity </h3>
+                    {/* <form onSubmit={handleSubmit(onSubmit)}  >
             <input className='mb-2' placeholder='Quantity' type="number" {...register("quantity")} />
             <input className='btn btn-dark w-50 mx-auto' type="submit" value= "Add Quantity"  />
             </form> */}
-                
+
+                </div>
             </div>
-           </div>
             {/* <Link to= '/chekout'>
                 <button className='my-5 btn btn-dark'>Proceed Checkout</button>
             </Link> */}
             <br />
-            <button   className='btn btn-dark'>deliver</button>
+            <button className='btn btn-dark'>deliver</button>
 
             <br />
 
