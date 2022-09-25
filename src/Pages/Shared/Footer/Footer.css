@@ -7,7 +7,7 @@
     
         color: #fff;
         border: none;
-        padding: 15px 20px;
+        padding: 13px 15px;
         /* display: inline-block; */
         text-decoration: none; 
         /* font: bold 18px sans-serif; */
@@ -50,7 +50,7 @@
         grid-template-columns: repeat(2, 1fr);
     }
     .footer{
-        height: 500px;
+        height: 700px;
     }
     .our-terms{
         margin-left: 15px;

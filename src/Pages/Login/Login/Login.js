@@ -81,7 +81,7 @@ const Login = () => {
           <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
         </Form.Group>
         <Button className='w-50 add-manage' variant="dark" type="submit">
-          Submit
+          Login
         </Button>
       </Form>
       {errorElement}

@@ -23,7 +23,7 @@ const Products = () => {
     }
     return (
         <div>
-             <h2>Newest vehicles</h2>
+             <h2 className='my-5'>Newest vehicles</h2>
             <div className='products'>
                 {
                     products.map(product => <AllProducts
