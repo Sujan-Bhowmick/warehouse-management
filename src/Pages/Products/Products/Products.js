@@ -8,35 +8,35 @@ const Products = () => {
     const [products, setProducts] = useProducts();
     const handleDelete = (id) => {
         const proceed = window.confirm('Are you sure');
-        if (proceed){
-            const url = `http://localhost:5000/inventory/${id}` 
+        if (proceed) {
+            const url = `https://warehouse-management-server-0tkh.onrender.com/inventory/${id}`
             fetch(url, {
                 method: 'DELETE',
             })
-            .then(res => res.json())
-            .then(data => {
-                console.log(data)
-                const remaining = products.filter(product => product._id !== id);
-                setProducts(remaining);
-            })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data)
+                    const remaining = products.filter(product => product._id !== id);
+                    setProducts(remaining);
+                })
         }
     }
     return (
         <div>
-             <h2 className='my-5'>Newest vehicles</h2>
+            <h2 className='my-5'>Newest vehicles</h2>
             <div className='products'>
                 {
                     products.map(product => <AllProducts
                         product={product}
                         key={product._id}
-                        handleDelete = {handleDelete}
+                        handleDelete={handleDelete}
                     ></AllProducts>)
                 }
             </div>
-            <Link to = "/inventory">
-            <button className='my-5 add-manage'>Add New Item</button>
+            <Link to="/inventory">
+                <button className='my-5 add-manage'>Add New Item</button>
             </Link>
-           
+
         </div>
     );
 };

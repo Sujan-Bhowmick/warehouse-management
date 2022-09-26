@@ -7,7 +7,7 @@ const ManageInventory = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure?');
         if (proceed){
-            const url = `http://localhost:5000/inventory/${id}`
+            const url = `https://warehouse-management-server-0tkh.onrender.com/inventory/${id}`
             fetch(url, {
                 method: 'DELETE',
             })

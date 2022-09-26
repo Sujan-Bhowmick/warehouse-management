@@ -5,7 +5,7 @@ const AddInventory = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data);
-        const url = `http://localhost:5000/inventory`;
+        const url = `https://warehouse-management-server-0tkh.onrender.com/inventory`;
         fetch(url, {
             method: 'POST',
             headers: {

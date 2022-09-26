@@ -11,7 +11,7 @@ const ProductDetails = () => {
     const [product, setProduct] = useState({});
     const { register, handleSubmit } = useForm();
     useEffect(() => {
-        const url = `http://localhost:5000/inventory/${productId}`
+        const url = `https://warehouse-management-server-0tkh.onrender.com/inventory/${productId}`
 
         fetch(url)
             .then(res => res.json())
@@ -21,7 +21,7 @@ const ProductDetails = () => {
 
     // const onSubmit = data => {
     //     console.log(data);
-    //     const url = `http://localhost:5000/inventory/${productId}`;
+    //     const url = `https://warehouse-management-server-0tkh.onrender.com/inventory/${productId}`;
     //     fetch(url, {
     //         method: 'PUT',
     //         headers: {
