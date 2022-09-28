@@ -11,7 +11,7 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
-            <h3 className='my-5'>Search Your Best Cars</h3>
+            <h3  className='my-5'> <span style = {{color: 'goldenrod'}}>SEARCH YOUR</span> <span style = {{color: 'blue'}}>BEST CARS</span> </h3>
             <div className='products'>
                 {
                     products.slice(0, 6).map(product => <Product

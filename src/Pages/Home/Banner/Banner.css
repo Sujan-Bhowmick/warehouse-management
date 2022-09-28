@@ -1,0 +1,31 @@
+.banner{
+    position: relative;
+   
+}
+.banner-style{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    border: 2px solid gray;
+   
+}
+.banner-style2{
+    position: absolute;
+    bottom: 40px;
+    right: 140px;
+    
+
+}
+
+@media screen and (max-width: 576px){
+    .banner-style h3 {
+        font-size: xx-small;
+    }
+    .banner-style h2{
+        font-size: small;
+    }
+    .banner-style2 h2{
+        font-size: xx-small;
+       
+    }
+}

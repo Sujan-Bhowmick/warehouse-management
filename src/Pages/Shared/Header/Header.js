@@ -17,16 +17,15 @@ const Header = () => {
         <>
             <Navbar  collapseOnSelect  className='' expand="lg" bg="dark" sticky='top' variant="dark">
                 <Container >
-                    <Navbar.Brand  href="#home">
+                    <Navbar.Brand as = {Link} to = "/">
                         <img src={logo} height="40" alt="" />
-                        
                     </Navbar.Brand>
 
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto ">
-                            <Nav.Link className='nav-links' href="/">Home</Nav.Link>
-                            <Nav.Link className='nav-links' href="/blogs">Blogs</Nav.Link>
+                            <Nav.Link className='nav-links' href="/home">Home</Nav.Link>
+                            <Nav.Link className='nav-links' as = {Link} to = '/blogs'>Blogs</Nav.Link>
                             {/* <NavDropdown className='' title="Dropdown" id="collasible-nav-dropdown">
                                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2">

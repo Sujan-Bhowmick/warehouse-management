@@ -38,3 +38,13 @@
   opacity: 1;
   z-index: -1;
 }
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 576px){
+  .add-manage{
+
+  }
+  
+
+}
